@@ -1,0 +1,86 @@
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.csprojResolveAssemblyReference.cache
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Properties.Resources.resources
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.csproj.GenerateResource.Cache
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\prjBilling.pdb
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.dll
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.dll
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.dll
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\TelerikCommon.dll
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.xml
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.xml
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.xml
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmBillingList.resources
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.exe.licenses
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.exe
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.pdb
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.dll
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.xml
+c:\users\edria\onedrive\文档\visual studio 2015\Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmAddRecord.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.exe
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.pdb
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\prjBilling.pdb
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\TelerikCommon.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.xml
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.xml
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.xml
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.xml
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Form1.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmAddRecord.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmBillingList.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Properties.Resources.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.csproj.GenerateResource.Cache
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.exe.licenses
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Menu.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmDetails.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmPrintBilling.resources
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.cache
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.compiled
+\\sgc-dc1\IT Department\Programmer\System Projects\prjBilling\prjBilling\obj\Debug\prjBilling.csprojResolveAssemblyReference.cache
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.exe
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.pdb
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\prjBilling.exe
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\prjBilling.pdb
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\TelerikCommon.dll
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.xml
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Users\edrian\Desktop\prjBilling\prjBilling\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.csprojResolveAssemblyReference.cache
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.Form1.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.frmAddRecord.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.frmBillingList.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.frmDetails.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.frmPrintBilling.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.Menu.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.Properties.Resources.resources
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.csproj.GenerateResource.Cache
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\prjBilling.exe.licenses
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\RdlCompile.cache
+C:\Users\edrian\Desktop\prjBilling\prjBilling\obj\Debug\RdlCompile.compiled
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Form1.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmAddRecord.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmBillingList.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmDetails.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.frmPrintBilling.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Menu.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.Properties.Resources.resources
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.csproj.GenerateResource.Cache
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.exe.licenses
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.cache
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.compiled
+C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config
