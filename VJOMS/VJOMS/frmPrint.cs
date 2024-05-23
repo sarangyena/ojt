@@ -12,7 +12,7 @@ namespace VJOMS
 {
     public partial class frmPrint : Form
     {
-        public string jono { get; set; }
+        public Int64 jono { get; set; }
         public frmPrint()
         {
             InitializeComponent();
@@ -20,8 +20,9 @@ namespace VJOMS
 
         private void frmPrint_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dsBilling.dtBillingById' table. You can move, or remove it, as needed.
             this.dsVJOMS.EnforceConstraints = false;
-            this.dtVJOMSTableAdapter.Fill(this.dsVJOMS.dtVJOMS, jono);
+            this.spPrintJOTableAdapter.Fill(this.dsVJOMS.spPrintJO, jono);
             this.reportViewer1.RefreshReport();
         }
     }

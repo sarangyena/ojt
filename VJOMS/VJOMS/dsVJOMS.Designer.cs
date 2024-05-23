@@ -26,6 +26,8 @@ namespace VJOMS {
         
         private dtVJOMSDataTable tabledtVJOMS;
         
+        private spPrintJODataTable tablespPrintJO;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -57,6 +59,9 @@ namespace VJOMS {
                 if ((ds.Tables["dtVJOMS"] != null)) {
                     base.Tables.Add(new dtVJOMSDataTable(ds.Tables["dtVJOMS"]));
                 }
+                if ((ds.Tables["spPrintJO"] != null)) {
+                    base.Tables.Add(new spPrintJODataTable(ds.Tables["spPrintJO"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -82,6 +87,16 @@ namespace VJOMS {
         public dtVJOMSDataTable dtVJOMS {
             get {
                 return this.tabledtVJOMS;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spPrintJODataTable spPrintJO {
+            get {
+                return this.tablespPrintJO;
             }
         }
         
@@ -155,6 +170,9 @@ namespace VJOMS {
                 if ((ds.Tables["dtVJOMS"] != null)) {
                     base.Tables.Add(new dtVJOMSDataTable(ds.Tables["dtVJOMS"]));
                 }
+                if ((ds.Tables["spPrintJO"] != null)) {
+                    base.Tables.Add(new spPrintJODataTable(ds.Tables["spPrintJO"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -194,6 +212,12 @@ namespace VJOMS {
                     this.tabledtVJOMS.InitVars();
                 }
             }
+            this.tablespPrintJO = ((spPrintJODataTable)(base.Tables["spPrintJO"]));
+            if ((initTable == true)) {
+                if ((this.tablespPrintJO != null)) {
+                    this.tablespPrintJO.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -206,11 +230,19 @@ namespace VJOMS {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabledtVJOMS = new dtVJOMSDataTable();
             base.Tables.Add(this.tabledtVJOMS);
+            this.tablespPrintJO = new spPrintJODataTable();
+            base.Tables.Add(this.tablespPrintJO);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializedtVJOMS() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespPrintJO() {
             return false;
         }
         
@@ -272,14 +304,15 @@ namespace VJOMS {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void dtVJOMSRowChangeEventHandler(object sender, dtVJOMSRowChangeEvent e);
         
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spPrintJORowChangeEventHandler(object sender, spPrintJORowChangeEvent e);
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class dtVJOMSDataTable : global::System.Data.TypedTableBase<dtVJOMSRow> {
-            
-            private global::System.Data.DataColumn columnEstimatedTotal;
             
             private global::System.Data.DataColumn columnJODATE;
             
@@ -295,25 +328,21 @@ namespace VJOMS {
             
             private global::System.Data.DataColumn columnJOUSER;
             
-            private global::System.Data.DataColumn columnJOTOTALESTI;
-            
-            private global::System.Data.DataColumn columnJOSUBTOTAL;
-            
-            private global::System.Data.DataColumn columnLESSDISCOUNT;
-            
             private global::System.Data.DataColumn columnBreakDownDetails;
-            
-            private global::System.Data.DataColumn columnEstimatedAmount;
             
             private global::System.Data.DataColumn columnJODetails;
             
-            private global::System.Data.DataColumn columnJOEstiAmount;
-            
-            private global::System.Data.DataColumn columnJOTotalEstiAmount;
-            
             private global::System.Data.DataColumn columnJONO;
             
+            private global::System.Data.DataColumn columnLESSDISCOUNT;
+            
+            private global::System.Data.DataColumn columnEstimatedAmount;
+            
+            private global::System.Data.DataColumn columnJOEstiAmount;
+            
             private global::System.Data.DataColumn columnAccomplishment;
+            
+            private global::System.Data.DataColumn columnJOTOTALESTI;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -346,14 +375,6 @@ namespace VJOMS {
             protected dtVJOMSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EstimatedTotalColumn {
-                get {
-                    return this.columnEstimatedTotal;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -414,41 +435,9 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn JOTOTALESTIColumn {
-                get {
-                    return this.columnJOTOTALESTI;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn JOSUBTOTALColumn {
-                get {
-                    return this.columnJOSUBTOTAL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn LESSDISCOUNTColumn {
-                get {
-                    return this.columnLESSDISCOUNT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BreakDownDetailsColumn {
                 get {
                     return this.columnBreakDownDetails;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EstimatedAmountColumn {
-                get {
-                    return this.columnEstimatedAmount;
                 }
             }
             
@@ -462,22 +451,6 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn JOEstiAmountColumn {
-                get {
-                    return this.columnJOEstiAmount;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn JOTotalEstiAmountColumn {
-                get {
-                    return this.columnJOTotalEstiAmount;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn JONOColumn {
                 get {
                     return this.columnJONO;
@@ -486,9 +459,41 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LESSDISCOUNTColumn {
+                get {
+                    return this.columnLESSDISCOUNT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EstimatedAmountColumn {
+                get {
+                    return this.columnEstimatedAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOEstiAmountColumn {
+                get {
+                    return this.columnJOEstiAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AccomplishmentColumn {
                 get {
                     return this.columnAccomplishment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOTOTALESTIColumn {
+                get {
+                    return this.columnJOTOTALESTI;
                 }
             }
             
@@ -529,28 +534,9 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public dtVJOMSRow AdddtVJOMSRow(
-                        string EstimatedTotal, 
-                        string JODATE, 
-                        string JOPLATE, 
-                        string JOMODEL, 
-                        string JOYEAR, 
-                        string JOCOMPANY, 
-                        string JOBRAND, 
-                        string JOUSER, 
-                        string JOTOTALESTI, 
-                        string JOSUBTOTAL, 
-                        string LESSDISCOUNT, 
-                        string BreakDownDetails, 
-                        string EstimatedAmount, 
-                        string JODetails, 
-                        string JOEstiAmount, 
-                        string JOTotalEstiAmount, 
-                        string JONO, 
-                        string Accomplishment) {
+            public dtVJOMSRow AdddtVJOMSRow(string JODATE, string JOPLATE, string JOMODEL, string JOYEAR, string JOCOMPANY, string JOBRAND, string JOUSER, string BreakDownDetails, string JODetails, string JONO, double LESSDISCOUNT, double EstimatedAmount, double JOEstiAmount, string Accomplishment, double JOTOTALESTI) {
                 dtVJOMSRow rowdtVJOMSRow = ((dtVJOMSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        EstimatedTotal,
                         JODATE,
                         JOPLATE,
                         JOMODEL,
@@ -558,16 +544,14 @@ namespace VJOMS {
                         JOCOMPANY,
                         JOBRAND,
                         JOUSER,
-                        JOTOTALESTI,
-                        JOSUBTOTAL,
-                        LESSDISCOUNT,
                         BreakDownDetails,
-                        EstimatedAmount,
                         JODetails,
-                        JOEstiAmount,
-                        JOTotalEstiAmount,
                         JONO,
-                        Accomplishment};
+                        LESSDISCOUNT,
+                        EstimatedAmount,
+                        JOEstiAmount,
+                        Accomplishment,
+                        JOTOTALESTI};
                 rowdtVJOMSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdtVJOMSRow);
                 return rowdtVJOMSRow;
@@ -590,7 +574,6 @@ namespace VJOMS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnEstimatedTotal = base.Columns["EstimatedTotal"];
                 this.columnJODATE = base.Columns["JODATE"];
                 this.columnJOPLATE = base.Columns["JOPLATE"];
                 this.columnJOMODEL = base.Columns["JOMODEL"];
@@ -598,23 +581,19 @@ namespace VJOMS {
                 this.columnJOCOMPANY = base.Columns["JOCOMPANY"];
                 this.columnJOBRAND = base.Columns["JOBRAND"];
                 this.columnJOUSER = base.Columns["JOUSER"];
-                this.columnJOTOTALESTI = base.Columns["JOTOTALESTI"];
-                this.columnJOSUBTOTAL = base.Columns["JOSUBTOTAL"];
-                this.columnLESSDISCOUNT = base.Columns["LESSDISCOUNT"];
                 this.columnBreakDownDetails = base.Columns["BreakDownDetails"];
-                this.columnEstimatedAmount = base.Columns["EstimatedAmount"];
                 this.columnJODetails = base.Columns["JODetails"];
-                this.columnJOEstiAmount = base.Columns["JOEstiAmount"];
-                this.columnJOTotalEstiAmount = base.Columns["JOTotalEstiAmount"];
                 this.columnJONO = base.Columns["JONO"];
+                this.columnLESSDISCOUNT = base.Columns["LESSDISCOUNT"];
+                this.columnEstimatedAmount = base.Columns["EstimatedAmount"];
+                this.columnJOEstiAmount = base.Columns["JOEstiAmount"];
                 this.columnAccomplishment = base.Columns["Accomplishment"];
+                this.columnJOTOTALESTI = base.Columns["JOTOTALESTI"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnEstimatedTotal = new global::System.Data.DataColumn("EstimatedTotal", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEstimatedTotal);
                 this.columnJODATE = new global::System.Data.DataColumn("JODATE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnJODATE);
                 this.columnJOPLATE = new global::System.Data.DataColumn("JOPLATE", typeof(string), null, global::System.Data.MappingType.Element);
@@ -629,27 +608,22 @@ namespace VJOMS {
                 base.Columns.Add(this.columnJOBRAND);
                 this.columnJOUSER = new global::System.Data.DataColumn("JOUSER", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnJOUSER);
-                this.columnJOTOTALESTI = new global::System.Data.DataColumn("JOTOTALESTI", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJOTOTALESTI);
-                this.columnJOSUBTOTAL = new global::System.Data.DataColumn("JOSUBTOTAL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJOSUBTOTAL);
-                this.columnLESSDISCOUNT = new global::System.Data.DataColumn("LESSDISCOUNT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLESSDISCOUNT);
                 this.columnBreakDownDetails = new global::System.Data.DataColumn("BreakDownDetails", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBreakDownDetails);
-                this.columnEstimatedAmount = new global::System.Data.DataColumn("EstimatedAmount", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEstimatedAmount);
                 this.columnJODetails = new global::System.Data.DataColumn("JODetails", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnJODetails);
-                this.columnJOEstiAmount = new global::System.Data.DataColumn("JOEstiAmount", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJOEstiAmount);
-                this.columnJOTotalEstiAmount = new global::System.Data.DataColumn("JOTotalEstiAmount", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJOTotalEstiAmount);
                 this.columnJONO = new global::System.Data.DataColumn("JONO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnJONO);
+                this.columnLESSDISCOUNT = new global::System.Data.DataColumn("LESSDISCOUNT", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLESSDISCOUNT);
+                this.columnEstimatedAmount = new global::System.Data.DataColumn("EstimatedAmount", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstimatedAmount);
+                this.columnJOEstiAmount = new global::System.Data.DataColumn("JOEstiAmount", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOEstiAmount);
                 this.columnAccomplishment = new global::System.Data.DataColumn("Accomplishment", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAccomplishment);
-                this.columnEstimatedTotal.MaxLength = 2147483647;
+                this.columnJOTOTALESTI = new global::System.Data.DataColumn("JOTOTALESTI", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOTOTALESTI);
                 this.columnJODATE.MaxLength = 2147483647;
                 this.columnJOPLATE.MaxLength = 2147483647;
                 this.columnJOMODEL.MaxLength = 2147483647;
@@ -657,16 +631,14 @@ namespace VJOMS {
                 this.columnJOCOMPANY.MaxLength = 2147483647;
                 this.columnJOBRAND.MaxLength = 2147483647;
                 this.columnJOUSER.MaxLength = 2147483647;
-                this.columnJOTOTALESTI.MaxLength = 2147483647;
-                this.columnJOSUBTOTAL.MaxLength = 2147483647;
-                this.columnLESSDISCOUNT.MaxLength = 2147483647;
                 this.columnBreakDownDetails.MaxLength = 2147483647;
-                this.columnEstimatedAmount.MaxLength = 2147483647;
                 this.columnJODetails.MaxLength = 2147483647;
-                this.columnJOEstiAmount.MaxLength = 2147483647;
-                this.columnJOTotalEstiAmount.MaxLength = 2147483647;
                 this.columnJONO.MaxLength = 2147483647;
+                this.columnLESSDISCOUNT.ReadOnly = true;
+                this.columnEstimatedAmount.ReadOnly = true;
+                this.columnJOEstiAmount.ReadOnly = true;
                 this.columnAccomplishment.MaxLength = 2147483647;
+                this.columnJOTOTALESTI.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -794,6 +766,524 @@ namespace VJOMS {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spPrintJODataTable : global::System.Data.TypedTableBase<spPrintJORow> {
+            
+            private global::System.Data.DataColumn columnjtId;
+            
+            private global::System.Data.DataColumn columnjoId;
+            
+            private global::System.Data.DataColumn columnJONO;
+            
+            private global::System.Data.DataColumn columnJODATE;
+            
+            private global::System.Data.DataColumn columnJOPLATE;
+            
+            private global::System.Data.DataColumn columnJOMODEL;
+            
+            private global::System.Data.DataColumn columnJOYEAR;
+            
+            private global::System.Data.DataColumn columnJOCOMPANY;
+            
+            private global::System.Data.DataColumn columnJOBRAND;
+            
+            private global::System.Data.DataColumn columnJOUSER;
+            
+            private global::System.Data.DataColumn columnLESSDISCOUNT;
+            
+            private global::System.Data.DataColumn columnBreakDownDetails;
+            
+            private global::System.Data.DataColumn columnEstimatedAmount;
+            
+            private global::System.Data.DataColumn columnAccomplishment;
+            
+            private global::System.Data.DataColumn columnJOTOTALESTI;
+            
+            private global::System.Data.DataColumn columnJODetailsId;
+            
+            private global::System.Data.DataColumn columnJODetails;
+            
+            private global::System.Data.DataColumn columnJOEstiAmount;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJODataTable() {
+                this.TableName = "spPrintJO";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spPrintJODataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spPrintJODataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn jtIdColumn {
+                get {
+                    return this.columnjtId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn joIdColumn {
+                get {
+                    return this.columnjoId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JONOColumn {
+                get {
+                    return this.columnJONO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JODATEColumn {
+                get {
+                    return this.columnJODATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOPLATEColumn {
+                get {
+                    return this.columnJOPLATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOMODELColumn {
+                get {
+                    return this.columnJOMODEL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOYEARColumn {
+                get {
+                    return this.columnJOYEAR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOCOMPANYColumn {
+                get {
+                    return this.columnJOCOMPANY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOBRANDColumn {
+                get {
+                    return this.columnJOBRAND;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOUSERColumn {
+                get {
+                    return this.columnJOUSER;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LESSDISCOUNTColumn {
+                get {
+                    return this.columnLESSDISCOUNT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BreakDownDetailsColumn {
+                get {
+                    return this.columnBreakDownDetails;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EstimatedAmountColumn {
+                get {
+                    return this.columnEstimatedAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AccomplishmentColumn {
+                get {
+                    return this.columnAccomplishment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOTOTALESTIColumn {
+                get {
+                    return this.columnJOTOTALESTI;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JODetailsIdColumn {
+                get {
+                    return this.columnJODetailsId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JODetailsColumn {
+                get {
+                    return this.columnJODetails;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JOEstiAmountColumn {
+                get {
+                    return this.columnJOEstiAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJORow this[int index] {
+                get {
+                    return ((spPrintJORow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spPrintJORowChangeEventHandler spPrintJORowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spPrintJORowChangeEventHandler spPrintJORowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spPrintJORowChangeEventHandler spPrintJORowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spPrintJORowChangeEventHandler spPrintJORowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspPrintJORow(spPrintJORow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJORow AddspPrintJORow(
+                        long joId, 
+                        string JONO, 
+                        string JODATE, 
+                        string JOPLATE, 
+                        string JOMODEL, 
+                        string JOYEAR, 
+                        string JOCOMPANY, 
+                        string JOBRAND, 
+                        string JOUSER, 
+                        double LESSDISCOUNT, 
+                        string BreakDownDetails, 
+                        double EstimatedAmount, 
+                        string Accomplishment, 
+                        double JOTOTALESTI, 
+                        long JODetailsId, 
+                        string JODetails, 
+                        double JOEstiAmount) {
+                spPrintJORow rowspPrintJORow = ((spPrintJORow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        joId,
+                        JONO,
+                        JODATE,
+                        JOPLATE,
+                        JOMODEL,
+                        JOYEAR,
+                        JOCOMPANY,
+                        JOBRAND,
+                        JOUSER,
+                        LESSDISCOUNT,
+                        BreakDownDetails,
+                        EstimatedAmount,
+                        Accomplishment,
+                        JOTOTALESTI,
+                        JODetailsId,
+                        JODetails,
+                        JOEstiAmount};
+                rowspPrintJORow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspPrintJORow);
+                return rowspPrintJORow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spPrintJODataTable cln = ((spPrintJODataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spPrintJODataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnjtId = base.Columns["jtId"];
+                this.columnjoId = base.Columns["joId"];
+                this.columnJONO = base.Columns["JONO"];
+                this.columnJODATE = base.Columns["JODATE"];
+                this.columnJOPLATE = base.Columns["JOPLATE"];
+                this.columnJOMODEL = base.Columns["JOMODEL"];
+                this.columnJOYEAR = base.Columns["JOYEAR"];
+                this.columnJOCOMPANY = base.Columns["JOCOMPANY"];
+                this.columnJOBRAND = base.Columns["JOBRAND"];
+                this.columnJOUSER = base.Columns["JOUSER"];
+                this.columnLESSDISCOUNT = base.Columns["LESSDISCOUNT"];
+                this.columnBreakDownDetails = base.Columns["BreakDownDetails"];
+                this.columnEstimatedAmount = base.Columns["EstimatedAmount"];
+                this.columnAccomplishment = base.Columns["Accomplishment"];
+                this.columnJOTOTALESTI = base.Columns["JOTOTALESTI"];
+                this.columnJODetailsId = base.Columns["JODetailsId"];
+                this.columnJODetails = base.Columns["JODetails"];
+                this.columnJOEstiAmount = base.Columns["JOEstiAmount"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnjtId = new global::System.Data.DataColumn("jtId", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnjtId);
+                this.columnjoId = new global::System.Data.DataColumn("joId", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnjoId);
+                this.columnJONO = new global::System.Data.DataColumn("JONO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJONO);
+                this.columnJODATE = new global::System.Data.DataColumn("JODATE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJODATE);
+                this.columnJOPLATE = new global::System.Data.DataColumn("JOPLATE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOPLATE);
+                this.columnJOMODEL = new global::System.Data.DataColumn("JOMODEL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOMODEL);
+                this.columnJOYEAR = new global::System.Data.DataColumn("JOYEAR", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOYEAR);
+                this.columnJOCOMPANY = new global::System.Data.DataColumn("JOCOMPANY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOCOMPANY);
+                this.columnJOBRAND = new global::System.Data.DataColumn("JOBRAND", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOBRAND);
+                this.columnJOUSER = new global::System.Data.DataColumn("JOUSER", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOUSER);
+                this.columnLESSDISCOUNT = new global::System.Data.DataColumn("LESSDISCOUNT", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLESSDISCOUNT);
+                this.columnBreakDownDetails = new global::System.Data.DataColumn("BreakDownDetails", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBreakDownDetails);
+                this.columnEstimatedAmount = new global::System.Data.DataColumn("EstimatedAmount", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstimatedAmount);
+                this.columnAccomplishment = new global::System.Data.DataColumn("Accomplishment", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAccomplishment);
+                this.columnJOTOTALESTI = new global::System.Data.DataColumn("JOTOTALESTI", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOTOTALESTI);
+                this.columnJODetailsId = new global::System.Data.DataColumn("JODetailsId", typeof(long), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJODetailsId);
+                this.columnJODetails = new global::System.Data.DataColumn("JODetails", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJODetails);
+                this.columnJOEstiAmount = new global::System.Data.DataColumn("JOEstiAmount", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJOEstiAmount);
+                this.columnjtId.AutoIncrement = true;
+                this.columnjtId.AutoIncrementSeed = -1;
+                this.columnjtId.AutoIncrementStep = -1;
+                this.columnjtId.AllowDBNull = false;
+                this.columnjtId.ReadOnly = true;
+                this.columnJONO.MaxLength = 2147483647;
+                this.columnJODATE.MaxLength = 2147483647;
+                this.columnJOPLATE.MaxLength = 2147483647;
+                this.columnJOMODEL.MaxLength = 2147483647;
+                this.columnJOYEAR.MaxLength = 2147483647;
+                this.columnJOCOMPANY.MaxLength = 2147483647;
+                this.columnJOBRAND.MaxLength = 2147483647;
+                this.columnJOUSER.MaxLength = 2147483647;
+                this.columnBreakDownDetails.MaxLength = 2147483647;
+                this.columnAccomplishment.MaxLength = 2147483647;
+                this.columnJODetails.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJORow NewspPrintJORow() {
+                return ((spPrintJORow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spPrintJORow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spPrintJORow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spPrintJORowChanged != null)) {
+                    this.spPrintJORowChanged(this, new spPrintJORowChangeEvent(((spPrintJORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spPrintJORowChanging != null)) {
+                    this.spPrintJORowChanging(this, new spPrintJORowChangeEvent(((spPrintJORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spPrintJORowDeleted != null)) {
+                    this.spPrintJORowDeleted(this, new spPrintJORowChangeEvent(((spPrintJORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spPrintJORowDeleting != null)) {
+                    this.spPrintJORowDeleting(this, new spPrintJORowChangeEvent(((spPrintJORow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespPrintJORow(spPrintJORow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spPrintJODataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class dtVJOMSRow : global::System.Data.DataRow {
@@ -805,22 +1295,6 @@ namespace VJOMS {
             internal dtVJOMSRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tabledtVJOMS = ((dtVJOMSDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EstimatedTotal {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.EstimatedTotalColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EstimatedTotal\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.EstimatedTotalColumn] = value;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -937,54 +1411,6 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string JOTOTALESTI {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.JOTOTALESTIColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'JOTOTALESTI\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.JOTOTALESTIColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string JOSUBTOTAL {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.JOSUBTOTALColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'JOSUBTOTAL\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.JOSUBTOTALColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string LESSDISCOUNT {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.LESSDISCOUNTColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LESSDISCOUNT\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.LESSDISCOUNTColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string BreakDownDetails {
                 get {
                     try {
@@ -996,22 +1422,6 @@ namespace VJOMS {
                 }
                 set {
                     this[this.tabledtVJOMS.BreakDownDetailsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EstimatedAmount {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.EstimatedAmountColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EstimatedAmount\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.EstimatedAmountColumn] = value;
                 }
             }
             
@@ -1033,38 +1443,6 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string JOEstiAmount {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.JOEstiAmountColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'JOEstiAmount\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.JOEstiAmountColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string JOTotalEstiAmount {
-                get {
-                    try {
-                        return ((string)(this[this.tabledtVJOMS.JOTotalEstiAmountColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'JOTotalEstiAmount\' in table \'dtVJOMS\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabledtVJOMS.JOTotalEstiAmountColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string JONO {
                 get {
                     try {
@@ -1076,6 +1454,54 @@ namespace VJOMS {
                 }
                 set {
                     this[this.tabledtVJOMS.JONOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double LESSDISCOUNT {
+                get {
+                    try {
+                        return ((double)(this[this.tabledtVJOMS.LESSDISCOUNTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LESSDISCOUNT\' in table \'dtVJOMS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtVJOMS.LESSDISCOUNTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double EstimatedAmount {
+                get {
+                    try {
+                        return ((double)(this[this.tabledtVJOMS.EstimatedAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EstimatedAmount\' in table \'dtVJOMS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtVJOMS.EstimatedAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double JOEstiAmount {
+                get {
+                    try {
+                        return ((double)(this[this.tabledtVJOMS.JOEstiAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOEstiAmount\' in table \'dtVJOMS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtVJOMS.JOEstiAmountColumn] = value;
                 }
             }
             
@@ -1097,14 +1523,18 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsEstimatedTotalNull() {
-                return this.IsNull(this.tabledtVJOMS.EstimatedTotalColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetEstimatedTotalNull() {
-                this[this.tabledtVJOMS.EstimatedTotalColumn] = global::System.Convert.DBNull;
+            public double JOTOTALESTI {
+                get {
+                    try {
+                        return ((double)(this[this.tabledtVJOMS.JOTOTALESTIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOTOTALESTI\' in table \'dtVJOMS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledtVJOMS.JOTOTALESTIColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1193,42 +1623,6 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsJOTOTALESTINull() {
-                return this.IsNull(this.tabledtVJOMS.JOTOTALESTIColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetJOTOTALESTINull() {
-                this[this.tabledtVJOMS.JOTOTALESTIColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsJOSUBTOTALNull() {
-                return this.IsNull(this.tabledtVJOMS.JOSUBTOTALColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetJOSUBTOTALNull() {
-                this[this.tabledtVJOMS.JOSUBTOTALColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsLESSDISCOUNTNull() {
-                return this.IsNull(this.tabledtVJOMS.LESSDISCOUNTColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetLESSDISCOUNTNull() {
-                this[this.tabledtVJOMS.LESSDISCOUNTColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsBreakDownDetailsNull() {
                 return this.IsNull(this.tabledtVJOMS.BreakDownDetailsColumn);
             }
@@ -1237,18 +1631,6 @@ namespace VJOMS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetBreakDownDetailsNull() {
                 this[this.tabledtVJOMS.BreakDownDetailsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsEstimatedAmountNull() {
-                return this.IsNull(this.tabledtVJOMS.EstimatedAmountColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetEstimatedAmountNull() {
-                this[this.tabledtVJOMS.EstimatedAmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1265,30 +1647,6 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsJOEstiAmountNull() {
-                return this.IsNull(this.tabledtVJOMS.JOEstiAmountColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetJOEstiAmountNull() {
-                this[this.tabledtVJOMS.JOEstiAmountColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsJOTotalEstiAmountNull() {
-                return this.IsNull(this.tabledtVJOMS.JOTotalEstiAmountColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetJOTotalEstiAmountNull() {
-                this[this.tabledtVJOMS.JOTotalEstiAmountColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsJONONull() {
                 return this.IsNull(this.tabledtVJOMS.JONOColumn);
             }
@@ -1301,6 +1659,42 @@ namespace VJOMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLESSDISCOUNTNull() {
+                return this.IsNull(this.tabledtVJOMS.LESSDISCOUNTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLESSDISCOUNTNull() {
+                this[this.tabledtVJOMS.LESSDISCOUNTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEstimatedAmountNull() {
+                return this.IsNull(this.tabledtVJOMS.EstimatedAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEstimatedAmountNull() {
+                this[this.tabledtVJOMS.EstimatedAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOEstiAmountNull() {
+                return this.IsNull(this.tabledtVJOMS.JOEstiAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOEstiAmountNull() {
+                this[this.tabledtVJOMS.JOEstiAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsAccomplishmentNull() {
                 return this.IsNull(this.tabledtVJOMS.AccomplishmentColumn);
             }
@@ -1309,6 +1703,520 @@ namespace VJOMS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAccomplishmentNull() {
                 this[this.tabledtVJOMS.AccomplishmentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOTOTALESTINull() {
+                return this.IsNull(this.tabledtVJOMS.JOTOTALESTIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOTOTALESTINull() {
+                this[this.tabledtVJOMS.JOTOTALESTIColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spPrintJORow : global::System.Data.DataRow {
+            
+            private spPrintJODataTable tablespPrintJO;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spPrintJORow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespPrintJO = ((spPrintJODataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long jtId {
+                get {
+                    return ((long)(this[this.tablespPrintJO.jtIdColumn]));
+                }
+                set {
+                    this[this.tablespPrintJO.jtIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long joId {
+                get {
+                    try {
+                        return ((long)(this[this.tablespPrintJO.joIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'joId\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.joIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JONO {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JONOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JONO\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JONOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JODATE {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JODATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JODATE\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JODATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOPLATE {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOPLATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOPLATE\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOPLATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOMODEL {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOMODELColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOMODEL\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOMODELColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOYEAR {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOYEARColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOYEAR\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOYEARColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOCOMPANY {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOCOMPANYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOCOMPANY\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOCOMPANYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOBRAND {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOBRANDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOBRAND\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOBRANDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JOUSER {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JOUSERColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOUSER\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOUSERColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double LESSDISCOUNT {
+                get {
+                    try {
+                        return ((double)(this[this.tablespPrintJO.LESSDISCOUNTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LESSDISCOUNT\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.LESSDISCOUNTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string BreakDownDetails {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.BreakDownDetailsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BreakDownDetails\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.BreakDownDetailsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double EstimatedAmount {
+                get {
+                    try {
+                        return ((double)(this[this.tablespPrintJO.EstimatedAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EstimatedAmount\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.EstimatedAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Accomplishment {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.AccomplishmentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Accomplishment\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.AccomplishmentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double JOTOTALESTI {
+                get {
+                    try {
+                        return ((double)(this[this.tablespPrintJO.JOTOTALESTIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOTOTALESTI\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOTOTALESTIColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public long JODetailsId {
+                get {
+                    try {
+                        return ((long)(this[this.tablespPrintJO.JODetailsIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JODetailsId\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JODetailsIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string JODetails {
+                get {
+                    try {
+                        return ((string)(this[this.tablespPrintJO.JODetailsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JODetails\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JODetailsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double JOEstiAmount {
+                get {
+                    try {
+                        return ((double)(this[this.tablespPrintJO.JOEstiAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'JOEstiAmount\' in table \'spPrintJO\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespPrintJO.JOEstiAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsjoIdNull() {
+                return this.IsNull(this.tablespPrintJO.joIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetjoIdNull() {
+                this[this.tablespPrintJO.joIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJONONull() {
+                return this.IsNull(this.tablespPrintJO.JONOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJONONull() {
+                this[this.tablespPrintJO.JONOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJODATENull() {
+                return this.IsNull(this.tablespPrintJO.JODATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJODATENull() {
+                this[this.tablespPrintJO.JODATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOPLATENull() {
+                return this.IsNull(this.tablespPrintJO.JOPLATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOPLATENull() {
+                this[this.tablespPrintJO.JOPLATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOMODELNull() {
+                return this.IsNull(this.tablespPrintJO.JOMODELColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOMODELNull() {
+                this[this.tablespPrintJO.JOMODELColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOYEARNull() {
+                return this.IsNull(this.tablespPrintJO.JOYEARColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOYEARNull() {
+                this[this.tablespPrintJO.JOYEARColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOCOMPANYNull() {
+                return this.IsNull(this.tablespPrintJO.JOCOMPANYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOCOMPANYNull() {
+                this[this.tablespPrintJO.JOCOMPANYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOBRANDNull() {
+                return this.IsNull(this.tablespPrintJO.JOBRANDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOBRANDNull() {
+                this[this.tablespPrintJO.JOBRANDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOUSERNull() {
+                return this.IsNull(this.tablespPrintJO.JOUSERColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOUSERNull() {
+                this[this.tablespPrintJO.JOUSERColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLESSDISCOUNTNull() {
+                return this.IsNull(this.tablespPrintJO.LESSDISCOUNTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLESSDISCOUNTNull() {
+                this[this.tablespPrintJO.LESSDISCOUNTColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBreakDownDetailsNull() {
+                return this.IsNull(this.tablespPrintJO.BreakDownDetailsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBreakDownDetailsNull() {
+                this[this.tablespPrintJO.BreakDownDetailsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEstimatedAmountNull() {
+                return this.IsNull(this.tablespPrintJO.EstimatedAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEstimatedAmountNull() {
+                this[this.tablespPrintJO.EstimatedAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAccomplishmentNull() {
+                return this.IsNull(this.tablespPrintJO.AccomplishmentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAccomplishmentNull() {
+                this[this.tablespPrintJO.AccomplishmentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOTOTALESTINull() {
+                return this.IsNull(this.tablespPrintJO.JOTOTALESTIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOTOTALESTINull() {
+                this[this.tablespPrintJO.JOTOTALESTIColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJODetailsIdNull() {
+                return this.IsNull(this.tablespPrintJO.JODetailsIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJODetailsIdNull() {
+                this[this.tablespPrintJO.JODetailsIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJODetailsNull() {
+                return this.IsNull(this.tablespPrintJO.JODetailsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJODetailsNull() {
+                this[this.tablespPrintJO.JODetailsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJOEstiAmountNull() {
+                return this.IsNull(this.tablespPrintJO.JOEstiAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJOEstiAmountNull() {
+                this[this.tablespPrintJO.JOEstiAmountColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1332,6 +2240,40 @@ namespace VJOMS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public dtVJOMSRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spPrintJORowChangeEvent : global::System.EventArgs {
+            
+            private spPrintJORow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJORowChangeEvent(spPrintJORow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spPrintJORow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1471,7 +2413,6 @@ namespace VJOMS.DataSet1TableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "dtVJOMS";
-            tableMapping.ColumnMappings.Add("EstimatedTotal", "EstimatedTotal");
             tableMapping.ColumnMappings.Add("JODATE", "JODATE");
             tableMapping.ColumnMappings.Add("JOPLATE", "JOPLATE");
             tableMapping.ColumnMappings.Add("JOMODEL", "JOMODEL");
@@ -1479,16 +2420,14 @@ namespace VJOMS.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("JOCOMPANY", "JOCOMPANY");
             tableMapping.ColumnMappings.Add("JOBRAND", "JOBRAND");
             tableMapping.ColumnMappings.Add("JOUSER", "JOUSER");
-            tableMapping.ColumnMappings.Add("JOTOTALESTI", "JOTOTALESTI");
-            tableMapping.ColumnMappings.Add("JOSUBTOTAL", "JOSUBTOTAL");
-            tableMapping.ColumnMappings.Add("LESSDISCOUNT", "LESSDISCOUNT");
             tableMapping.ColumnMappings.Add("BreakDownDetails", "BreakDownDetails");
-            tableMapping.ColumnMappings.Add("EstimatedAmount", "EstimatedAmount");
             tableMapping.ColumnMappings.Add("JODetails", "JODetails");
-            tableMapping.ColumnMappings.Add("JOEstiAmount", "JOEstiAmount");
-            tableMapping.ColumnMappings.Add("JOTotalEstiAmount", "JOTotalEstiAmount");
             tableMapping.ColumnMappings.Add("JONO", "JONO");
+            tableMapping.ColumnMappings.Add("LESSDISCOUNT", "LESSDISCOUNT");
+            tableMapping.ColumnMappings.Add("EstimatedAmount", "EstimatedAmount");
+            tableMapping.ColumnMappings.Add("JOEstiAmount", "JOEstiAmount");
             tableMapping.ColumnMappings.Add("Accomplishment", "Accomplishment");
+            tableMapping.ColumnMappings.Add("JOTOTALESTI", "JOTOTALESTI");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1505,10 +2444,11 @@ namespace VJOMS.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        JODetails.EstimatedTotal, JOLIST.JODATE, JOLIST.JOPLATE, JOLIST.JOMODEL, JOLIST.JOYEAR, JOLIST.JOCOMPANY, JOLIST.JOBRAND, JOLIST.JOUSER, JOLIST.JOTOTALESTI, JOLIST.JOSUBTOTAL, JOLIST.LESSDISCOUNT, 
-                         JODetails.BreakDownDetails, JODetails.EstimatedAmount, tblVPrevAmount.JODetails, tblVPrevAmount.JOEstiAmount, tblVPrevAmount.JOTotalEstiAmount, JOLIST.JONO, JODetails.Accomplishment
-FROM            JODetails INNER JOIN
-                         JOLIST ON JODetails.JONo = JOLIST.JONO AND JODetails.EstimatedTotal = JOLIST.JOTOTALESTI INNER JOIN
+            this._commandCollection[0].CommandText = @"SELECT        JOLIST.JONO, JOLIST.JODATE, JOLIST.JOPLATE, JOLIST.JOMODEL, JOLIST.JOYEAR, JOLIST.JOCOMPANY, JOLIST.JOBRAND, JOLIST.JOUSER, ISNULL(CONVERT(float, REPLACE(JOLIST.LESSDISCOUNT, ',', '')), 0) 
+                         AS LESSDISCOUNT, JODetails.BreakDownDetails, ISNULL(CONVERT(float, REPLACE(JODetails.EstimatedAmount, ',', '')), 0) AS EstimatedAmount, tblVPrevAmount.JODetails, ISNULL(CONVERT(float, 
+                         REPLACE(tblVPrevAmount.JOEstiAmount, ',', '')), 0) AS JOEstiAmount, JODetails.Accomplishment, isnull(CONVERT(float, REPLACE(JOLIST.JOTOTALESTI, ',', '')),0) AS JOTOTALESTI
+FROM            JOLIST LEFT OUTER JOIN
+                         JODetails ON JOLIST.JONO = JODetails.JONo LEFT OUTER JOIN
                          tblVPrevAmount ON JODetails.JONo = tblVPrevAmount.JONo
 WHERE        (JOLIST.JONO = @id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
@@ -1547,6 +2487,204 @@ WHERE        (JOLIST.JONO = @id)";
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(id));
             }
             DataSet1.dtVJOMSDataTable dataTable = new DataSet1.dtVJOMSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spPrintJOTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spPrintJOTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spPrintJO";
+            tableMapping.ColumnMappings.Add("jtId", "jtId");
+            tableMapping.ColumnMappings.Add("joId", "joId");
+            tableMapping.ColumnMappings.Add("JONO", "JONO");
+            tableMapping.ColumnMappings.Add("JODATE", "JODATE");
+            tableMapping.ColumnMappings.Add("JOPLATE", "JOPLATE");
+            tableMapping.ColumnMappings.Add("JOMODEL", "JOMODEL");
+            tableMapping.ColumnMappings.Add("JOYEAR", "JOYEAR");
+            tableMapping.ColumnMappings.Add("JOCOMPANY", "JOCOMPANY");
+            tableMapping.ColumnMappings.Add("JOBRAND", "JOBRAND");
+            tableMapping.ColumnMappings.Add("JOUSER", "JOUSER");
+            tableMapping.ColumnMappings.Add("LESSDISCOUNT", "LESSDISCOUNT");
+            tableMapping.ColumnMappings.Add("BreakDownDetails", "BreakDownDetails");
+            tableMapping.ColumnMappings.Add("EstimatedAmount", "EstimatedAmount");
+            tableMapping.ColumnMappings.Add("Accomplishment", "Accomplishment");
+            tableMapping.ColumnMappings.Add("JOTOTALESTI", "JOTOTALESTI");
+            tableMapping.ColumnMappings.Add("JODetailsId", "JODetailsId");
+            tableMapping.ColumnMappings.Add("JODetails", "JODetails");
+            tableMapping.ColumnMappings.Add("JOEstiAmount", "JOEstiAmount");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::VJOMS.Properties.Settings.Default.VJORConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spPrintJO";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 19, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.spPrintJODataTable dataTable, global::System.Nullable<long> id) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((id.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((long)(id.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.spPrintJODataTable GetData(global::System.Nullable<long> id) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((id.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((long)(id.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            DataSet1.spPrintJODataTable dataTable = new DataSet1.spPrintJODataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

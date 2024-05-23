@@ -26,7 +26,7 @@ namespace VJOMS
         private void btnParts_Click(object sender, EventArgs e)
         {
             frmPrint frm = new frmPrint();
-            frm.jono = jono;
+            frm.jono = Convert.ToInt64(jono);
             frm.Show();
         }
     }

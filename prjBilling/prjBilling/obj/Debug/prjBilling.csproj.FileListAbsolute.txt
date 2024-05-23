@@ -84,3 +84,4 @@ C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\prjBilling.
 C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.cache
 C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\obj\Debug\RdlCompile.compiled
 C:\Users\edrian\Desktop\OJT Projects\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjBilling\prjBilling\bin\Debug\prjBilling.exe.config

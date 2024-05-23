@@ -26,8 +26,8 @@ namespace VJOMS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=\"DESKTOP-F75QEU3\\SQLEXPRESS\"; Initial Catalog=VJOR; User ID = sa; Pas" +
-            "sword = 1234")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=\"sgcserver, 16900\"; Initial Catalog=VJOR; User ID = redbaron; Passwor" +
+            "d = m@gi3")]
         public string VJORConnectionString {
             get {
                 return ((string)(this["VJORConnectionString"]));

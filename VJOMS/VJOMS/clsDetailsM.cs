@@ -15,7 +15,7 @@ namespace VJOMS
         private SqlConnection con;
         public clsDetailsM()
         {
-            string strCon = @"Data Source=DESKTOP-F75QEU3\SQLEXPRESS; Initial Catalog=VJOR; User ID = sa; Password = 1234";
+            string strCon = @"Data Source=sgcserver, 16900; Initial Catalog=VJOR; User ID = redbaron; Password = m@gi3";
             con = new SqlConnection(strCon);
         }
         public void addDetails(clsDetails d)

@@ -1,0 +1,72 @@
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\prjPayroll.exe.config
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\prjPayroll.exe
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\prjPayroll.pdb
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.dll
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.UI.dll
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\TelerikCommon.dll
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.xml
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RichTextEditor.xml
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.UI.xml
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmLogin.resources
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.Properties.Resources.resources
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.csproj.GenerateResource.Cache
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe.licenses
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.pdb
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RadDock.dll
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RadDock.xml
+c:\users\micha\documents\visual studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmEmployee.resources
+C:\Users\micha\Documents\Visual Studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\micha\Documents\Visual Studio 2015\Projects\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\micha\Documents\Visual Studio 2015\Projects\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmPayroll.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmEmployee.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmLogin.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmPayroll.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.Properties.Resources.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.csproj.GenerateResource.cache
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe.licenses
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.pdb
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\prjPayroll.exe.config
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\prjPayroll.exe
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\prjPayroll.pdb
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\TelerikCommon.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.RichTextEditor.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmEEmployee.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmScanner.resources
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Video.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Video.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\zxing.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\zxing.presentation.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\zxing.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\zxing.presentation.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Imaging.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Math.dll
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Imaging.xml
+C:\Users\edria\Downloads\prjPayroll-20240309T082019Z-001\prjPayroll\prjPayroll\bin\Debug\AForge.Math.xml
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\bin\Debug\prjPayroll.exe.config
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.pdb
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.csprojResolveAssemblyReference.cache
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmEEmployee.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmEmployee.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmLogin.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmPayroll.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.frmScanner.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.Properties.Resources.resources
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.csproj.GenerateResource.Cache
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\prjPayroll\prjPayroll\obj\Debug\prjPayroll.exe.licenses

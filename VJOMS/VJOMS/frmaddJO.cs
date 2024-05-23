@@ -274,7 +274,7 @@ namespace VJOMS
                 txtSub.Text = sub.ToString();
                 txtTotal.Text = (sub - discount).ToString();
             }
-            catch(Exception err)
+            catch(Exception)
             {
                 MessageBox.Show("Please select a detail to edit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -436,7 +436,7 @@ namespace VJOMS
                 txtDiscount.Text = grdJO.SelectedRows[0].Cells["discount"].Value.ToString();
                 txtTotal.Text = (Convert.ToDecimal(txtSub.Text) - discount).ToString();
             }
-            catch(Exception err)
+            catch(Exception)
             {
                 MessageBox.Show("Please add details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnAdd.Enabled = true;
@@ -513,7 +513,7 @@ namespace VJOMS
                 }
                 txtRegTotal.Text = regTotal.ToString();
             }
-            catch (Exception err)
+            catch (Exception)
             {
                 MessageBox.Show("Please add details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 btnRegAdd.Enabled = true;
@@ -562,7 +562,7 @@ namespace VJOMS
                 }
                 txtRegTotal.Text = regTotal.ToString();
             }
-            catch(Exception err)
+            catch(Exception)
             {
                 MessageBox.Show("Please select a detail to edit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
