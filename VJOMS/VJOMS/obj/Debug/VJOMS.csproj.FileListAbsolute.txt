@@ -52,3 +52,4 @@ C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\VJOMS\VJOMS\bin\Debug\
 C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\VJOMS\VJOMS\obj\Debug\VJOMS.TrustInfo.xml
 C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\VJOMS\VJOMS\obj\Debug\VJOMS.exe.manifest
 C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\VJOMS\VJOMS\obj\Debug\VJOMS.application
+C:\Users\edrian\Documents\Visual Studio 2015\Projects\ojt\VJOMS\VJOMS\obj\Debug\VJOMS.csprojResolveAssemblyReference.cache
